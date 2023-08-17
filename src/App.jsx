@@ -35,46 +35,49 @@ function App() {
 
   return (
     <div className="parent-dark" style={{background:background}}>
-      <navbar className="primarynav" style={{marginTop:'.5rem'}}>
-        <h1 style={{ color:heading }}>Imran Khan</h1>
+      <navbar className="primarynav" style={{background:background}}>
+        <h1 style={{ color:heading,alignContent:'center',display:'flex',justifyContent:'center',marginTop:'1rem' }}>Imran Khan</h1>
         <div className="navelements">
           <ul style={{color:heading}}>
             <li >
               <a style={{color:heading}} href="#Home">Home</a>
             </li>
             <li>
-              <a href="#Projects">Project Section</a>
+              <a style={{color:heading}} href="#Projects">Project Section</a>
             </li>
             <li>
-              <a href="#Techstack">Technologies</a>
+              <a style={{color:heading}} href="#Techstack">Technologies</a>
             </li>
             <li>
-              <a href="#contactme">Contact Me</a>
+              <a style={{color:heading}} href="#contactme">Contact Me</a>
+            </li>
+            <li>
+              <a style={{color:heading}} href="#themes">Themes</a>
             </li>
           </ul>
         </div>
         <div className="primarynavelements">
-          <ul>
+          <ul >
             <li>
-              <a href="#Home">Home</a>
+              <a style={{color:heading}} href="#Home">Home</a>
             </li>
             <li>
-              <a href="#Projects">Project Section</a>
+              <a style={{color:heading}} href="#Projects">Project Section</a>
             </li>
             <li>
-              <a href="#Techstack">Technologies</a>
+              <a style={{color:heading}} href="#Techstack">Technologies</a>
             </li>
             <li>
-              <a href="#contactme">Contact Me</a>
+              <a style={{color:heading}} href="#contactme">Contact Me</a>
             </li>
             <li>
-              <a href="#themes">Themes</a>
+              <a style={{color:heading}} href="#themes">Themes</a>
             </li>
           </ul>
         </div>
 
         <div className="Hamburger">
-          <Hamburger toggled={isOpen} toggle={setOpen} />
+          <Hamburger toggled={isOpen} toggle={setOpen} style={{color:heading}} />
         </div>
       </navbar>
       <main style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>

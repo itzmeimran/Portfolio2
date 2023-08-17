@@ -56,8 +56,13 @@ const PageTheme = () => {
     localStorage.setItem("border", theme.colors[2]);
     localStorage.setItem("button", theme.colors[0]);
     localStorage.setItem("buttonFont", theme.colors[1]);
-
-    toast.success("Theme Changed");
+    window.location.reload();
+    toast.success("Theme Changed",{
+        position:"top-center",
+        autoClose:1000,
+        closeButton:false,
+        hideProgressBar:true,
+    });
   }
 
   const { heading, body } = useSelector((state) => state.colors);
