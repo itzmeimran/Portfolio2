@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Open+Sans:wght@500&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+@font-face {
+  font-family: 'janelotus';
+  src: url('./assets/janelotus/Janelotus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root, *   {
+  box-sizing: border-box;
+  margin:0;
+    
+  
+}
+.root{
+  color:white;
+  background-color: #679896;
+}
+.root-dark{
+  color:#FF97C1;
+  background-color: #323232;
+}
+
+html{
+  scroll-behavior: smooth;
+}

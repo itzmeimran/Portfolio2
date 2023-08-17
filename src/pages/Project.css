@@ -1,0 +1,109 @@
+.projectSection {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.projectSection h1 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin:1.5rem 0;
+
+}
+
+.photo img {
+  width: 100%;
+  max-width: 520px;
+  object-fit: cover;
+
+  border: 10px solid white;
+}
+
+.details {
+  width: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  padding: 1rem;
+
+}
+
+.details button {
+  width: 10rem;
+  text-decoration: none;
+
+}
+
+.details button:hover a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card:nth-child(even) {
+
+  animation: slide-right 1s ease-out;
+
+
+}
+
+.card:nth-child(odd) {
+
+  animation: slide-left 1s ease-out;
+
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-400%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-400%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+@media screen and (min-width:300px) and (max-width:767px) {
+  .projectSection h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+ 
+}

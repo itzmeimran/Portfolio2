@@ -1,0 +1,76 @@
+.techstack {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.techstack h1 {
+  font-size: 2.8rem;
+  margin-top: 3rem;
+  letter-spacing: 2px;
+}
+
+.logocontainer {
+  display: flex;
+  gap: 2.2rem;
+
+}
+
+.logocontainer {
+  overflow-x: scroll;
+  /* Add horizontal scrolling */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  animation: scroll 10s linear infinite;
+  /*Apply the animation*/
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    /* Start at 0px from left */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* End at -100% from left (i.e. end of content) */
+  }
+}
+
+.logocontainer {
+  display: flex;
+  /* Use flexbox layout */
+  overflow-x: auto;
+  /* Add horizontal scrolling */
+  scroll-behavior: smooth;
+  /* Add smooth scrolling */
+}
+
+/* Add the following pseudo-element to fill the remaining space */
+.logocontainer::after {
+  content: "";
+  flex: 0 0 1px;
+  /* Set the width to 1 pixel */
+}
+
+
+@media screen and (min-width:300px) and (max-width:767px) {
+  .techstack {
+    height: 250px;
+  }
+
+  .logocontainer {
+    gap: 2rem;
+  }
+
+  .techstack h1 {
+    font-size: 1.7rem;
+  }
+}

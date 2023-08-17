@@ -1,0 +1,152 @@
+.parent {
+  width: 100vw;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  overflow-x: hidden;
+}
+
+.parent-dark{
+   width: 100vw;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /* color: #FF97C1; */
+  overflow-x: hidden;
+}
+
+/* li a{
+  color:white;
+} */
+
+navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+
+navbar h1 {
+  font-family: 'janelotus';
+  font-weight: 800;
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+  width: 100%;
+  max-width: 250px;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+li:hover {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+
+}
+
+
+button {
+  background-color: white;
+  padding: .5rem .8rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: -5px -5px 30px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px -5px 30px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px -5px 30px -14px rgba(0, 0, 0, 0.75);
+
+}
+
+.Hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.primarynavelements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 60%;
+}
+.navelements{
+  display: none;
+}
+
+/* Responsive design */
+
+@media screen and (max-width:1080px) {
+  .primarynavelements{
+    display: none;
+  }
+  navbar {
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background:#323232;
+    
+
+  }
+
+  .Hamburger {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 30px;
+    margin-right: 20px;
+    z-index: 1;
+  }
+
+  .navelements ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 6rem;
+    padding-right: 10rem;
+    justify-content: right;
+    inset: 0 0 0 30%;
+    background: rgba(255, 255, 255, 0.32);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    transition: 2s all ease-in-out;
+  }
+  /* .navelements ul{
+    display: none;
+  } */
+  .navelements{
+    display:flex;
+    display: none;
+    transition: 5s all ease-in-out;
+  }
+}
+
+.hide {
+  transform: translateX(300px);
+}
+.show{
+  display: flex;
+
+}
