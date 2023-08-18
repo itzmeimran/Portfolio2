@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Typography } from "@mui/material";
 
 const Projects = () => {
-  const { heading, body, button, border } = useSelector(
+  const { heading, body, button, border, background, buttonFont } = useSelector(
     (state) => state.colors
   );
   function Card({ img, name, details, link }) {
@@ -20,7 +20,8 @@ const Projects = () => {
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
-            border: "2px solid",borderColor:border
+            border: "2px solid",
+            borderColor: border,
           }}
         >
           <Typography variant="h4" style={{ color: heading }}>
@@ -29,8 +30,16 @@ const Projects = () => {
           <Typography component="p" variant="subtitle2" style={{ color: body }}>
             {details}
           </Typography>
-          <button style={{ color: button, border: '1px solid',borderColor:heading }}>
-            <a href={link} target="_blank">
+          <button
+            style={{
+              color: button,
+              border: "1px solid",
+              borderColor: heading,
+              background: button,
+              backdropFilter: "blur(15px)",
+            }}
+          >
+            <a style={{ color: buttonFont }} href={link} target="_blank">
               Visit Page
             </a>
           </button>
