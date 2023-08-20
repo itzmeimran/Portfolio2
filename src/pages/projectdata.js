@@ -1,7 +1,7 @@
 import Screenshot from "./Screenshot.png";
-import socialmediahub from '../assets/socialmediahub.png'
-import usabilityHub from '../assets/usabilityHub.png'
-import iqraApp from '../assets/iqraApp.png'
+import socialmediahub from "../assets/socialmediahub.png";
+import usabilityHub from "../assets/usabilityHub.png";
+import iqraApp from "../assets/iqraApp.png";
 
 const arr = [
   {
@@ -19,7 +19,7 @@ const arr = [
     link: "https://usabilityhubimran.netlify.app/",
   },
   {
-    img:socialmediahub,
+    img: socialmediahub,
     name: "Socialmedia Interface",
     details:
       "A socialmediaHub made using Reactjs and Material User Interface which also use night mode and its responsible",
@@ -31,13 +31,6 @@ const arr = [
     details:
       "Feeling hot!! Do you want to know the weather at your place? Head over to my web app where you can find out the temperature related to different places across the globe. Have fun!!",
     link: "https://itzmeimran.github.io/weatherapp/",
-  },
-  {
-    img: Screenshot,
-    name: "Parallax Website",
-    details:
-      "This webiste shows some cool Parallax effects, must visit this website",
-    link: "https://itzmeimran.github.io/ParallaxWebsite/",
   },
   {
     img: "https://itzmeimran.github.io/Portfolio/Assets/pg.png",
@@ -59,6 +52,13 @@ const arr = [
     details:
       "Are you wondering how old you are? Simply head over to my page Age Calculator, where you can find out how many years and days old you are. Its always fun to create such apps that everyone wants to try.",
     link: "https://itzmeimran.github.io/age-generator/",
+  },
+  {
+    img: Screenshot,
+    name: "Parallax Website",
+    details:
+      "This webiste shows some cool Parallax effects, must visit this website",
+    link: "https://itzmeimran.github.io/ParallaxWebsite/",
   },
 ];
 
