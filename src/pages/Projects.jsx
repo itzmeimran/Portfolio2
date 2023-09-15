@@ -11,8 +11,8 @@ const Projects = () => {
   function Card({ img, name, details, link }) {
     return (
       <div className="card" data-aos="fade-up" style={{ border: border }}>
-        <div className="photo">
-          <img src={img} alt={name} />
+        <div className="photo" >
+          <img  src={img} alt={name} />
         </div>
         <div
           className="details"
@@ -39,7 +39,7 @@ const Projects = () => {
               backdropFilter: "blur(15px)",
             }}
           >
-            <a style={{ color: buttonFont }} href={link} target="_blank">
+            <a style={{ color: border }} href={link} target="_blank">
               Visit Page
             </a>
           </button>

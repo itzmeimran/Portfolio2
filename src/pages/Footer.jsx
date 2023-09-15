@@ -12,6 +12,9 @@ import { Typography } from "@mui/material";
 
 const Footer = () => {
   const {heading, body} = useSelector((state)=>state.colors)
+  const { button, border, background, buttonFont } = useSelector(
+    (state) => state.colors
+  );
   return (
     <div className="footer">
       <div className="logo">
@@ -20,41 +23,41 @@ const Footer = () => {
       <div className="menu-dark">
         <Typography variant='h6' style={{color:heading}}>MENU</Typography>
         <p>
-          <a  style={{color:body}} className="a-dark  " href="#Home">
+          <a  style={{color:border}} className="a-dark  " href="#Home">
             Home
           </a>
         </p>
         <p>
-          <a style={{color:body}} className="a-dark  " href="#Projects">
+          <a style={{color:border}} className="a-dark  " href="#Projects">
             Project Section
           </a>
         </p>
         <p>
-          <a  style={{color:body}} className="a-dark  " href="#Techstack">
+          <a  style={{color:border}} className="a-dark  " href="#Techstack">
             Technologies
           </a>
         </p>
         <p>
-          <a  style={{color:body}} className="a-dark  " href="#contactMe">
+          <a  style={{color:border}} className="a-dark  " href="#contactMe">
             Contact Me
           </a>
         </p>
-        <div className="icons">
+        <div className="icons" style={{marginTop:'1rem'}}>
           <a href="https://linkedin.com/in/imrankhanmohammad98" target="_blank">
             <AiOutlineLinkedin
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{ fontSize: "2rem", color: border }}
               className="icon"
             />
           </a>
           <a href="mailto:ikik790@gmail.com" target="_blank">
             <AiFillMail
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{ fontSize: "2rem", color: border }}
               className="icon"
             />
           </a>
           <a href="https://github.com/itzmeimran" target="_blank">
             <AiOutlineGithub
-              style={{ fontSize: "2rem", color: "white" }}
+              style={{ fontSize: "2rem", color: border }}
               className="icon"
             />
           </a>
