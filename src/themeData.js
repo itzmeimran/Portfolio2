@@ -84,4 +84,9 @@ export const themeData = [
     colors: ["#fcfcf8", "#e53c58", "#fcfcf8"],
     background: "#f37f83",
   },
+  {
+    name: "solarized light",
+    colors: ["#859900", "#2aa198", "#181819"],
+    background: "#fdf6e3",
+  },
 ];
