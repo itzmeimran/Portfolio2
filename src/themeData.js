@@ -34,11 +34,11 @@ export const themeData = [
     colors: ["#00ce7c", "#95784d3", "#c2fbe1"],
     background: "#181c18",
   },
-  {
-    name: "ben 10",
-    colors: ["#15ff00", "#006500", "#d1ffcd"],
-    background: "#000000",
-  },
+  // {
+  //   name: "ben 10",
+  //   colors: ["#15ff00", "#006500", "#d1ffcd"],
+  //   background: "#000000",
+  // },
   {
     name: "rose pine dawn",
     colors: ["#56959f", "#c4a7e7", "#286983"],

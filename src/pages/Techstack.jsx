@@ -11,18 +11,38 @@ import { useSelector } from "react-redux";
 import { Typography } from "@mui/material";
 
 const Techstack = () => {
-  const {heading} = useSelector((state)=>state.colors);
+  const { heading } = useSelector((state) => state.colors);
   return (
     <div className="techstack">
-      <Typography variant='h3' fontWeight={'bold'} sx={{color:heading}}>My Projects</Typography>
+      <Typography
+        variant="h3"
+        fontWeight={"bold"}
+        sx={{ color: heading, marginBottom: "3rem" }}
+      >
+        Technology Stack
+      </Typography>
       <div className="logocontainer">
-        <AiOutlineHtml5 style={{ fontSize: "5rem", color: "#F15A59" }} />
-        <FaCss3 style={{ fontSize: "5rem", color: "#05BFDB" }} />
-        <IoLogoJavascript style={{ fontSize: "5rem", color: "#FEFF86" }} />
-        <SiExpress style={{ fontSize: "5rem", color: "#000000" }} />
-        <FaReact style={{ fontSize: "5rem", color: "#86E5FF" }} />
-        <SiMongodb style={{ fontSize: "5rem", color: "#03C988" }} />
-        <FaNode style={{ fontSize: "5rem", color: "#000000" }} />
+        <AiOutlineHtml5
+          style={{ fontSize: "5rem", color: "#F15A59", cursor: "pointer" }}
+        />
+        <FaCss3
+          style={{ fontSize: "5rem", color: "#05BFDB", cursor: "pointer" }}
+        />
+        <IoLogoJavascript
+          style={{ fontSize: "5rem", color: "#FEFF86", cursor: "pointer" }}
+        />
+        <SiExpress
+          style={{ fontSize: "5rem", color: "#000000", cursor: "pointer" }}
+        />
+        <FaReact
+          style={{ fontSize: "5rem", color: "#86E5FF", cursor: "pointer" }}
+        />
+        <SiMongodb
+          style={{ fontSize: "5rem", color: "#03C988", cursor: "pointer" }}
+        />
+        <FaNode
+          style={{ fontSize: "5rem", color: "#000000", cursor: "pointer" }}
+        />
       </div>
     </div>
   );

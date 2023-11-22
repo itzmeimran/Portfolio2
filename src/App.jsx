@@ -11,7 +11,9 @@ import { Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 
 function App() {
-  const { heading,background,body, } = useSelector((state) => state.colors);
+  const { heading, background, body, border } = useSelector(
+    (state) => state.colors
+  );
   console.log("this is heading from app.jsx ", heading);
   const [isOpen, setOpen] = useState(false);
 
@@ -34,50 +36,102 @@ function App() {
   isOpen ? show() : hide();
 
   return (
-    <div className="parent-dark" style={{background:background}}>
-      <navbar className="primarynav" style={{background:background}}>
-        <h1 style={{ color:heading,alignContent:'center',display:'flex',justifyContent:'center',marginTop:'1rem' }}>Imran Khan</h1>
+    <div className="parent-dark" style={{ background: background }}>
+      <navbar
+        className="primarynav"
+        style={{
+          background: background,
+          position: "fixed",
+          top: "0",
+          left: "0",
+          right: "0",
+          zIndex: "1",
+          // backgroundColor: "rgba(255,255,255,.1)",
+          backdropFilter: "blur(10px)",
+        }}
+      >
+        <h2
+          style={{
+            color: heading,
+            alignContent: "center",
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "1rem",
+            fontWeight: "500",
+            lineHeight: "3rem",
+          }}
+        >
+          <pre style={{ color: border }}>I</pre>
+          <pre>mran</pre>
+          <pre> </pre>
+          <pre style={{ color: border }}>K</pre>
+          <pre>han</pre>
+        </h2>
         <div className="navelements">
-          <ul style={{color:heading}}>
-            <li >
-              <a style={{color:heading}} href="#Home">Home</a>
+          <ul style={{ color: heading }}>
+            <li>
+              <a style={{ color: heading }} href="#Home">
+                Home
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#Projects">Project Section</a>
+              <a style={{ color: heading }} href="#Projects">
+                Project Section
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#Techstack">Technologies</a>
+              <a style={{ color: heading }} href="#Techstack">
+                Technologies
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#contactme">Contact Me</a>
+              <a style={{ color: heading }} href="#contactme">
+                Contact Me
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#themes">Themes</a>
+              <a style={{ color: heading }} href="#themes">
+                Themes
+              </a>
             </li>
           </ul>
         </div>
         <div className="primarynavelements">
-          <ul >
+          <ul>
             <li>
-              <a style={{color:heading}} href="#Home">Home</a>
+              <a style={{ color: heading }} href="#Home">
+                Home
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#Projects">Project Section</a>
+              <a style={{ color: heading }} href="#Projects">
+                Project Section
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#Techstack">Technologies</a>
+              <a style={{ color: heading }} href="#Techstack">
+                Technologies
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#contactme">Contact Me</a>
+              <a style={{ color: heading }} href="#contactme">
+                Contact Me
+              </a>
             </li>
             <li>
-              <a style={{color:heading}} href="#themes">Themes</a>
+              <a style={{ color: heading }} href="#themes">
+                Themes
+              </a>
             </li>
           </ul>
         </div>
 
         <div className="Hamburger">
-          <Hamburger toggled={isOpen} toggle={setOpen} style={{color:heading}} />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            style={{ color: heading }}
+          />
         </div>
       </navbar>
       <main style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>

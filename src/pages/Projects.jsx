@@ -2,19 +2,20 @@ import React from "react";
 import "./Project.css";
 import projectdata from "./projectdata.js";
 import { useSelector } from "react-redux";
-import { Typography } from "@mui/material";
+import { Typography,Box,Paper } from "@mui/material";
+import BasicChips from '../components/BasicChips.jsx'
 
 const Projects = () => {
   const { heading, body, button, border, background, buttonFont } = useSelector(
     (state) => state.colors
   );
-  function Card({ img, name, details, link }) {
+  function Card({ img, name, details, link,tech }) {
     return (
       <div className="card" data-aos="fade-up" style={{ border: border }}>
         <div className="photo" >
           <img  src={img} alt={name} />
         </div>
-        <div
+        <Paper elevation={10}
           className="details"
           style={{
             display: "flex",
@@ -30,6 +31,11 @@ const Projects = () => {
           <Typography component="p" variant="subtitle2" style={{ color: body }}>
             {details}
           </Typography>
+          <Box sx={{display:'flex',justifyContent:'space-between',gap:'1rem'}}>
+            {tech.map((item,index)=>{
+              return <BasicChips key={index} name={item} />
+            })}
+          </Box>
           <button
             style={{
               color: button,
@@ -39,11 +45,11 @@ const Projects = () => {
               backdropFilter: "blur(15px)",
             }}
           >
-            <a style={{ color: border }} href={link} target="_blank">
+            <a style={{ border: border,color:body }} href={link} target="_blank">
               Visit Page
             </a>
           </button>
-        </div>
+        </Paper>
       </div>
     );
   }
@@ -61,6 +67,7 @@ const Projects = () => {
             name={item.name}
             details={item.details}
             link={item.link}
+            tech={item.tech}
           />
         ))}
       </div>

@@ -11,12 +11,12 @@ const getInitialColors = () => {
 
   return {
     name: storedName || 'default',
-    heading: storedHeading || "#FF97C1",
-    body: storedBody || "#FFFFFF",
-    background: storedBackground || "#323232",
-    border: storedBorder || "#FFFFFF",
-    button: storedButton || "#FFFFFF",
-    buttonFont: storedButtonFont || "",
+    heading: storedHeading || "#56c3b7",
+    body: storedBody || "#326984",
+    background: storedBackground || "#0f1f2c",
+    border: storedBorder || "#326984",
+    button: storedButton || "#56C3B7",
+    buttonFont: storedButtonFont || "#326984",
   };
 };
 

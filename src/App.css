@@ -29,12 +29,11 @@ navbar {
 
 
 navbar h1 {
-  font-family: 'janelotus';
   font-weight: 800;
   font-size: 2.6rem;
   letter-spacing: 3px;
   width: 100%;
-  max-width: 250px;
+  max-width: 350px;
 }
 
 ul {
@@ -51,7 +50,6 @@ ul {
 li:hover {
   font-weight: bold;
   cursor: pointer;
-  border-bottom: 2px solid black;
 
 }
 

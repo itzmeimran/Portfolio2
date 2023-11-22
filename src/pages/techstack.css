@@ -24,11 +24,11 @@
 }
 
 .logocontainer {
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   /* Add horizontal scrolling */
   white-space: nowrap;
   /* Prevent text wrapping */
-  animation: scroll 10s linear infinite;
+  /* animation: scroll 10s linear infinite; */
   /*Apply the animation*/
 }
 
